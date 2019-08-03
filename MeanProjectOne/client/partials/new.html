@@ -1,0 +1,10 @@
+<h1>NEW Friend!</h1>
+
+<div ng-repeat="error in errors" ng-bind="error.message"></div>
+  <form ng-submit="create()">
+  <input type="text" ng-model="newFriend.fname">
+  <input type="text" ng-model="newFriend.lname">
+  <input type="date" ng-model="newFriend.birthday">
+  <!-- <input type="submit" value="Create"> -->
+  <button type="submit" class="btn btn-default">Create</button>
+</form>

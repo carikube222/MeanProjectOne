@@ -1,0 +1,20 @@
+<h1>MAIN PAGE</h1>
+
+<table class="table table-striped">
+  <thead>
+    <tr>
+      <th>First Name</th>
+      <th>Last Name</th>
+      <th>Birthday</th>
+    </tr>
+  </thead>
+    <tbody>
+      <tr ng-repeat="friend in friends">
+        <td ng-bind="friend.fname"></td>
+        <td ng-bind="friend.lname"></td>
+        <td ng-bind="friend.birthday"></td>
+        <td><a href="#!/friends/{{friend._id}}/edit">Edit</a></td>
+        <td><button class="btn btn-default" ng-click="delete(friend)">Delete</button></td>
+      </tr>
+    </tbody>
+</table>
